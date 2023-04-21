@@ -1,0 +1,92 @@
+
+function OnEvent(event, arg)
+if (event == "MOUSE_BUTTON_RELEASED" and arg == 9) then
+
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+
+		end
+fragment2()
+
+end
+end
+
+function fragment2()
+while (IsKeyLockOn("capslock")) do
+x,y=GetMousePosition()
+	for i=1,10,1 do
+	MoveMouseRelative(-3,-17) --收藏品
+	end
+	Sleep(500)
+PressAndReleaseMouseButton(1)
+PressAndReleaseMouseButton(1)
+Sleep(1000)
+for i=1,10,1 do
+	MoveMouseRelative(-12,8) --防具
+end
+
+Sleep(200)
+PressAndReleaseMouseButton(1)
+Sleep(1000)
+
+for i=1,10,1 do
+	MoveMouseRelative(-12,7)
+end
+MoveMouseRelative(0,3)
+Sleep(200)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+
+for i=1,10,1 do
+	MoveMouseRelative(26,0)
+end
+MoveMouseRelative(4,0)
+Sleep(200)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+
+for i=1,10,1 do
+	MoveMouseRelative(-22,-7)
+end
+MoveMouseRelative(10,0)
+
+Sleep(300)
+for i=1,9,1 do
+	PressMouseButton(1)
+	Sleep(3500)
+	ReleaseMouseButton(1)
+	Sleep(500)
+end
+Sleep(500)
+PressKey("f1")
+	Sleep(200)
+	ReleaseKey("f1")
+Sleep(1500)
+for i=1,10,1 do
+	MoveMouseRelative(12,7)
+end
+Sleep(2000)
+PressAndReleaseMouseButton(1)
+
+Sleep(500)
+PressKey("f1")
+	Sleep(200)
+	ReleaseKey("f1")
+Sleep(700)
+for i=1,10,1 do
+	MoveMouseRelative(8,8)
+end
+Sleep(500)
+MoveMouseTo(x,y)
+Sleep(500)
+for i=1,9,1 do
+	PressKey("f")
+	Sleep(1500)
+	ReleaseKey("f")
+	Sleep(500)
+end
+Sleep(500)
+end
+end
